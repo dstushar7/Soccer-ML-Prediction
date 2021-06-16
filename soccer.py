@@ -26,7 +26,7 @@ def form_post():
     team1 = request.form['sel1']
     team2 = request.form['sel2']
     if team1 != team2 :
-        data = pd.read_csv('final_final_dataset.csv')
+        data = pd.read_csv('dataset.csv')
         data = data[data.MW > 3]
         teamname = team1
 
