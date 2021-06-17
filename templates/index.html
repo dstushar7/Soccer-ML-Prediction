@@ -94,8 +94,8 @@ font-size: 50px;
 }
 
 body{
-background-image:url("{{url_for('static', filename='football.png')}}");	
-background-repeat: no-repeat;
+background-image:url("{{url_for('static', filename='football.jpg')}}");	
+background-repeat: no-repeat center center fixed;
 background-size: cover;
 color:'white';
 }
@@ -122,7 +122,7 @@ background-image:url("tvguide-glasspane.png");
 <div class="container">
     <h2 align="center" style="color:white;">Select Home Team and Away Team in the checklist</h2>
       <div class="form-group">
-        <label for="sel1">Select Home Team (select one):</label>
+        <label for="sel1">Select Home Team:</label>
         <select class="form-control" id="sel1" name="sel1">
           <option>Man United</option>
           <option>Chelsea</option>
@@ -148,7 +148,7 @@ background-image:url("tvguide-glasspane.png");
       </div>
       <br>
       <div class="form-group">
-        <label for="sel2">Select Away Team (select one):</label>
+        <label for="sel2">Select Away Team:</label>
         <select class="form-control" id="sel2" name="sel2">
             <option>Liverpool</option>
             <option>Chelsea</option>
