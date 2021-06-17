@@ -33,10 +33,10 @@ def form_post():
         teamwin = winnerlist[0]
         if teamwin == 'A':
             teamwin = team2
-            hnh = "AwayTeam"
+            hnh = "Away Team Wins"
         elif teamwin == 'H':
             teamwin = team1
-            hnh = "HomeTeam"
+            hnh = "Home Team Wins"
         else:
             teamwin = "DRAW!"
             hnh = "The game will be a DRAW"
