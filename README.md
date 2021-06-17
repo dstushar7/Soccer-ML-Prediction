@@ -1,2 +1,2 @@
-# Soccer ML Prediction
+# Soccer Prediction using ML
  Final Year Thesis
