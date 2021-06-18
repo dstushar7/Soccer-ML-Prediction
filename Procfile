@@ -1,1 +1,1 @@
-web: gunicorn app: soccer
+web: gunicorn soccer:app
