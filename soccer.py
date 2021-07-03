@@ -3,15 +3,15 @@ from flask import request
 import pandas as pd
 import pickle
 from visualization import X_all
-app = Flask(__name__)
+soccer = Flask(__name__)
 
 
 clf = pickle.load(open('tunedmodel','rb'))
-@app.route('/')
+@soccer.route('/')
 def runpy():
     return render_template('index.html')
 
-@app.route('/',methods=['POST'])
+@soccer.route('/',methods=['POST'])
 def form_post():
     global team1
     global team2
@@ -48,6 +48,6 @@ def form_post():
 
 
 if __name__ == '__main__':
-    app.debug = True
-    app.run()
-    app.run(debug=True)
+    soccer.debug = True
+    soccer.run()
+    soccer.run(debug=True)

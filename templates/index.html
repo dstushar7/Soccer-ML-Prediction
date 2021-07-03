@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Football Prediciton</title>
+<title>Football Match Result Prediction</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -41,7 +41,11 @@ animation: spin 2s linear infinite;
 0% { transform: rotate(0deg); }
 100% { transform: rotate(360deg); }
 }
-
+/* Selector Text Color change */
+.selector {
+  background-color: black;
+  color: white;
+}
 /* Add animation to "page content" */
 .animate-bottom {
 position: relative;
@@ -110,7 +114,7 @@ background-image:url("tvguide-glasspane.png");
 </style>
 
 <body>
-<div style="vertical-align: top; height:50px; background-color:black;color:white"><h2 style="padding:10px;">Football Match Outcome Prediction</h2></div>
+<div style="vertical-align: top; height:50px; background-color:black;color:white"><h2 style="padding:10px;">Soccer Match Outcome Prediction</h2></div>
 <div style="display:none;" id="myDiv" class="animate-bottom">
 <h1 id="data" style="color:white;">Probable Winner Team is : {{text}}</h1>
 <h2 id="gu1" style="color:white;">{{blehh}}</h2>
@@ -120,9 +124,9 @@ background-image:url("tvguide-glasspane.png");
 <form action='/' method='post'>
 <div id="bodyItem">
 <div class="container">
-    <h2 align="center" style="color:white;">Select Home Team and Away Team in the checklist</h2>
+    <h2 align="center" style="color:white;">Select Home Team and Away Team</h2>
       <div class="form-group">
-        <label for="sel1">Select Home Team:</label>
+        <label for="sel1" class="selector">Select Home Team:</label>
         <select class="form-control" id="sel1" name="sel1">
           <option>Man United</option>
           <option>Chelsea</option>
@@ -148,7 +152,7 @@ background-image:url("tvguide-glasspane.png");
       </div>
       <br>
       <div class="form-group">
-        <label for="sel2">Select Away Team:</label>
+        <label for="sel2" class="selector">Select Away Team:</label>
         <select class="form-control" id="sel2" name="sel2">
             <option>Liverpool</option>
             <option>Chelsea</option>
